@@ -1,4 +1,4 @@
-# Kernel-Density-Estimation
+# Kernel-Density-Estimation (warm-up project!)
 Implementation of Kernel-Density-Estimation (KDE) with Matlab
 
 ## smooth kernel function (Gaussian kernel)
@@ -28,6 +28,9 @@ Implementation of Kernel-Density-Estimation (KDE) with Matlab
 
 ## results
 > As expected, the estimated density will be more accurate with more data points (see figure3 in example1 and example2). furthermore, a large ℎ will over-smooth the density estimation and mask the structure of the data, and a small ℎ will yield a density estimation that is spiky and very hard to interpret. (see image below)
+> 
 > **Actually, If we had unlimited data points, the best result would be obtained by bringing h near zero.**
+> 
 >![4](https://user-images.githubusercontent.com/85555218/121736530-ed869b80-cb0c-11eb-8652-a62a924ebbf6.png)
+> 
 > I prefer using the smooth kernel function instead of the parzen window because parzen window yields density estimates that have discontinuities, and weights equally all points, regardless of their distance to the estimation point.
